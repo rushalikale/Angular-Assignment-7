@@ -5,6 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Ass7Binding';
+export class AppComponent 
+{
+  public str : string = "Marvellous Infosystem";
+  constructor(){ }
+  public upper() : string
+  {
+    this.str = this.str.toUpperCase();
+    return this.str;
+  }
+  public lower() : string
+  {
+    this.str = this.str.toLowerCase();
+    return this.str;
+  }
 }
